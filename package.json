@@ -15,6 +15,10 @@
   },
   "author": "Misaka_0x447f",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Misaka-0x447f/managed-object-proxy.git"
+  },
   "devDependencies": {
     "@types/lodash": "^4.14.121",
     "@types/mocha": "^5.2.6",
