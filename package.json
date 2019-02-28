@@ -1,0 +1,37 @@
+{
+  "name": "managed-object-proxy",
+  "version": "0.1.0",
+  "description": "A managed object proxy.",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "start": "npm run clean && npm run serve",
+    "build": "npm run clean && npm run lint && tsc -p tsconfig.json",
+    "serve": "npx tsc-watch -p tsconfig.json --onSuccess \"concurrently --kill-others-on-fail -p \".\" --c 'cyan.bgCyan,green.bgGreen' 'npm:lint' 'npm:node'\"",
+    "node": "node out/main.js",
+    "lint": "npx tslint -c tslint.json -p tsconfig.json",
+    "clean": "npx rimraf dist out",
+    "test": "ts-node test/manual_test.ts"
+  },
+  "author": "Misaka_0x447f",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.121",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.9.4",
+    "concurrently": "^4.1.0",
+    "copyfiles": "^2.1.0",
+    "mocha": "^6.0.2",
+    "rimraf": "^2.6.3",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
+    "tsc-watch": "^1.1.37",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

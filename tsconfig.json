@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // "target": "es5",
+    // "strict": true,
+    // "jsx": "preserve",
+    // "importHelpers": true,
+    "esModuleInterop": true, // babel compatibility, see https://github.com/Microsoft/TypeScript/issues/16093
+    "allowSyntheticDefaultImports": true,
+    // if enable, also add this to 'webpack.config.js/module/exports': // devtool: 'inline-source-map',
+    // "sourceMap": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "outDir": "./out",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
