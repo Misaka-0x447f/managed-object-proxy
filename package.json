@@ -1,6 +1,6 @@
 {
   "name": "managed-object-proxy",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A managed object proxy.",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -19,6 +19,14 @@
     "type": "git",
     "url": "https://github.com/Misaka-0x447f/managed-object-proxy.git"
   },
+  "keywords": [
+    "proxy",
+    "reflect",
+    "object",
+    "watch",
+    "observeable"
+  ],
+  "files": ["out/*", "out/**/*"],
   "devDependencies": {
     "@types/lodash": "^4.14.121",
     "@types/mocha": "^5.2.6",
