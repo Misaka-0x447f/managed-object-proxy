@@ -1,6 +1,6 @@
 {
   "name": "managed-object-proxy",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A managed object proxy.",
   "main": "./out/main.js",
   "types": "./out/main.d.ts",

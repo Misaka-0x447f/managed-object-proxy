@@ -14,7 +14,9 @@ export default class Watchable {
       },
       set: (target: object, property: symbol, input: any) => {
         // ok we are located at "parent"
-        if (typeof input === "object") {
+        if (isNull(input)) {  // 'null' is an object.
+          Reflect.set(target, property, input);
+        } else if (typeof input === "object") {
           const agent = new Watchable();
           agent.location = symbolToString(property);  // children's location
           // not directly set for non-flatten object...

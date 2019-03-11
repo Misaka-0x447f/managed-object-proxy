@@ -49,7 +49,7 @@ expected output:
 . > {} @ parent.depth1
 . > {} @ parent.depth1.depth2
 . > 1 @ parent.depth1.depth2.depth3
-. {"parent":{"depth1":{"depth2":{"depth3":"1"}}}}
+. 7{"parent":{"depth1":{"depth2":{"depth3":"1"}}}}
 . > undefined @ parent.depth1
 . {"parent":{}}
 */
